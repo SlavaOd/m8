@@ -1,0 +1,144 @@
+@charset "UTF-8";
+body {
+  background-color: #8387da; }
+
+.wrapper {
+  width: 550px;
+  border: 2px solid red;
+  margin: 0 auto; }
+  .wrapper .header {
+    background-color: #3e48fa; }
+  .wrapper .img_sector {
+    width: 100%;
+    height: 550px;
+    background-image: url(./Screenshot_2.png);
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .wrapper .characteristics {
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 0px 3px 4px 21px rgba(0, 0, 0, 0.1); }
+    .wrapper .characteristics h2 {
+      text-align: center; }
+    .wrapper .characteristics ul {
+      padding: 0; }
+      .wrapper .characteristics ul li {
+        font-size: 20px;
+        padding: 5px;
+        border-bottom: 3px solid #3239bc;
+        background-color: #3a42d8;
+        list-style-type: none; }
+      .wrapper .characteristics ul li:nth-child(2n) {
+        background-color: #3e47ed; }
+  .wrapper h2 {
+    text-align: center;
+    font-size: 40px; }
+  .wrapper iframe {
+    width: 80%;
+    display: block;
+    margin: 0 auto; }
+
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  cursor: pointer; }
+  .burger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 0;
+    transition: transform 0.3s ease; }
+
+/* Скрытие меню при инициализации */
+.menu {
+  display: none; }
+
+/* Показывать меню при активации */
+.menu.active {
+  display: block; }
+
+.marquee-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  /* Высота бегущей строки */
+  background-color: #fff;
+  text-align: center; }
+
+.marquee {
+  font-size: 40px;
+  color: red;
+  font-weight: bold;
+  position: absolute;
+  line-height: 50px;
+  white-space: nowrap;
+  /* Предотвращает перенос текста */
+  animation: marquee 10s linear infinite;
+  /* Продолжительность анимации */ }
+  .marquee span {
+    text-decoration: line-through; }
+
+@keyframes marquee {
+  0% {
+    left: 100%; }
+  /* Начальное положение справа */
+  100% {
+    left: -100%; }
+  /* Конечное положение слева */ }
+.slider-container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 20px; }
+  .slider-container .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    /* Добавляем плавную анимацию */
+    overflow: hidden;
+    /* Скрытие содержимого, которое не помещается в область слайдера */ }
+    .slider-container .slider .slide {
+      width: 100%;
+      cursor: pointer;
+      width: 100%;
+      margin: 0 auto;
+      transition: opacity 0.5s ease-in-out;
+      opacity: 1;
+      /* Установите изначальную прозрачность на 1 */
+      flex: 0 0 50%;
+      /* Каждый слайд занимает 50% ширины слайдера */ }
+      .slider-container .slider .slide img {
+        display: block;
+        width: 100%;
+        margin: 0 auto; }
+
+.slide.hidden {
+  opacity: 0;
+  /* Скрываем невидимые слайды */ }
+
+img {
+  max-width: 100%;
+  /* Изображения масштабируются по ширине слайда */
+  height: auto; }
+
+.butt {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #f2a50b;
+  /* Прозрачный фон для кнопок */
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 2;
+  /* Кнопки поверх слайдов */ }
+
+.prev {
+  left: 20%; }
+
+.next {
+  right: 20%; }
+
+/*# sourceMappingURL=style.css.map */

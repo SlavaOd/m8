@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="navbar">
+                <div class="burger-menu" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="menu">
+                    <!-- Здесь разместите пункты меню -->
+                    <a href="#">Главная</a>
+                    <a href="#">О нас</a>
+                    <a href="#">Услуги</a>
+                    <a href="#">Контакты</a>
+                </div>
+            </div>
+            <div class="marquee-container">
+                <div class="marquee">
+                  <!-- Ваш текст здесь -->
+                  Суперціна до кінця місяця <span>1500</span> 1200грн
+                </div>
+              </div>
+        </div>
+        <div class="img_sector">
+
+        </div>
+        <div class="characteristics">
+            <h2>Характеристики:</h2>
+            <ul>
+                <li>Тип приставки: Стаціонарна</li>
+                <li>З'єднання з телевізором: HDMI</li>
+                <li>Підтримка моніторів 4К</li>
+                <li>З'єднання джойстиків: Бездротове</li>
+                <li>Живлення адаптера: 5v</li>
+                <li>Розмір HDMI адаптера: 95x40x10 мм</li>
+                <li>Розмір джойстика: 150х95 мм</li>
+            </ul>
+        </div>
+        <h2>Комлектація</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ieUd8uF8MQo?si=1-ks8TeLs2CfkCRY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="characteristics">
+            <ul>
+                <li>Ігрова приставка (HDMI адаптер)</li>
+                <li>Два бездротових джойстика</li>
+                <li>Дрот живлення USB - micro USB</li>
+                <li>Подовжувач HDMI</li>
+                <li>Бездротовий адаптер джойстиків</li>
+            </ul>
+        </div>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide slide_1 "onclick="openPopup(this)">
+                    <img src="./photo_2024-03-10_14-54-42.jpg" alt="Image 1">
+                </div>
+                <div class="slide slide_2" onclick="openPopup(this)">
+                    <img src="./photo_2024-03-10_14-54-42 (2).jpg" alt="Image 2">
+                </div>
+                <div class="slide slide_3" onclick="openPopup(this)">
+                    <img src="./photo_2024-03-10_15-27-36.jpg" alt="Image 2">
+                </div>
+            <!-- <div class="popup" id="popup">
+              <span class="close-btn" onclick="closePopup()">&times;</span>
+              <img class="popup-img" src="" alt="Popup Image">
+              
+          </div> -->
+                <!-- Добавьте другие слайды по аналогии -->
+            </div>
+            <button class="prev butt">&#10094;</button>
+            <button class="next butt">&#10095;</button>
+        </div>
+
+        <div class="footer">
+
+        </div>
+
+
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
